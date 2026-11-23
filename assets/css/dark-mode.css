@@ -1,0 +1,231 @@
+/* =========================================
+   DARK MODE — BrandBuilder
+   ========================================= */
+
+html.dark-mode,
+body.dark-mode {
+    --navy: #E2E8F0;            
+    --navy-light: #CBD5E1;
+    --accent: #FBBF24;          
+    --accent-hover: #F59E0B;
+
+    --off-white: #0F172A;       
+    --white: #1E293B;           
+    --text-dark: #F1F5F9;       
+    --text-muted: #94A3B8;      
+    --border-light: #334155;    
+
+    --success-text: #6EE7B7;
+    --success-bg: rgba(16, 185, 129, 0.15);
+    --warning-text: #FCD34D;
+    --warning-bg: rgba(245, 158, 11, 0.15);
+    --danger-text: #FCA5A5;
+    --danger-bg: rgba(239, 68, 68, 0.15);
+    --info-text: #93C5FD;
+    --info-bg: rgba(59, 130, 246, 0.15);
+
+    color-scheme: dark;
+}
+
+html.dark-mode { background-color: #0F172A; }
+
+/* ---------- Body & base ---------- */
+body.dark-mode {
+    background-color: #0F172A;
+    color: #F1F5F9;
+}
+
+/* ---------- Header ---------- */
+body.dark-mode .site-header {
+    background-color: rgba(15, 23, 42, 0.95);
+    border-bottom: 1px solid var(--border-light);
+}
+
+body.dark-mode .logo,
+body.dark-mode .menu-toggle,
+body.dark-mode .nav-links a {
+    color: #F1F5F9;
+}
+
+body.dark-mode .nav-links a:hover {
+    color: var(--accent);
+}
+
+/* ---------- Hero ---------- */
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #020617 0%, #0F172A 100%);
+}
+
+body.dark-mode .hero h1,
+body.dark-mode .hero p {
+    color: #FFFFFF !important;
+}
+
+/* ---------- Stats ---------- */
+body.dark-mode .stats-section {
+    background-color: #1E293B;
+    border-bottom: 1px solid var(--border-light);
+}
+
+body.dark-mode .stat-item h3 { color: #F1F5F9; }
+body.dark-mode .stat-item p { color: #94A3B8; }
+
+/* ---------- Section headings ---------- */
+body.dark-mode .section-header h2 { color: #F1F5F9; }
+body.dark-mode .section-header p { color: #94A3B8; }
+
+/* ---------- Cards ---------- */
+body.dark-mode .designer-card,
+body.dark-mode .service-card,
+body.dark-mode .testimonial-card,
+body.dark-mode .step-card,
+body.dark-mode .chat-container,
+body.dark-mode .chat-sidebar,
+body.dark-mode .chat-main {
+    background-color: #1E293B;
+    border-color: #334155;
+    color: #F1F5F9;
+}
+
+body.dark-mode .designer-card h1,
+body.dark-mode .designer-card h2,
+body.dark-mode .designer-card h3,
+body.dark-mode .designer-card h4,
+body.dark-mode .service-card h3,
+body.dark-mode .step-card h3,
+body.dark-mode .testimonial-card h4 {
+    color: #FFFFFF;
+}
+
+body.dark-mode .designer-card p,
+body.dark-mode .service-card p,
+body.dark-mode .step-card p,
+body.dark-mode .testimonial-card p,
+body.dark-mode .designer-info p {
+    color: #94A3B8;
+}
+
+body.dark-mode .designer-avatar,
+body.dark-mode .testimonial-avatar,
+body.dark-mode .leaderboard-avatar,
+body.dark-mode .chat-avatar {
+    color: #0F172A !important;
+}
+
+/* ---------- Rating / price text ---------- */
+body.dark-mode .rating { color: #F1F5F9; }
+body.dark-mode .rating span { color: var(--accent); }
+body.dark-mode .price { color: #F1F5F9; }
+body.dark-mode .price small { color: #94A3B8; }
+
+/* ---------- Forms ---------- */
+body.dark-mode .search-input,
+body.dark-mode .filter-select,
+body.dark-mode textarea,
+body.dark-mode select {
+    background-color: #1E293B !important;
+    color: #F1F5F9 !important;
+    border: 1px solid #475569 !important;
+}
+
+body.dark-mode .search-input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #94A3B8 !important;
+}
+
+body.dark-mode .search-input:focus,
+body.dark-mode .filter-select:focus,
+body.dark-mode textarea:focus {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 4px rgba(251, 191, 36, 0.15) !important;
+}
+
+body.dark-mode select option { background-color: #1E293B; color: #F1F5F9; }
+body.dark-mode label { color: #F1F5F9; }
+body.dark-mode .search-container { background-color: #1E293B; border: 1px solid #334155; }
+
+/* ---------- Buttons ---------- */
+body.dark-mode .search-btn,
+body.dark-mode .btn-primary {
+    background-color: var(--accent);
+    color: #0F172A !important;
+}
+
+body.dark-mode .search-btn:hover {
+    background-color: var(--accent-hover);
+}
+
+/* ---------- Tables ---------- */
+body.dark-mode table { color: #F1F5F9; }
+body.dark-mode thead { background-color: #1E293B !important; }
+body.dark-mode th { background-color: #1E293B !important; color: #F1F5F9 !important; border-bottom: 1px solid #334155 !important; }
+body.dark-mode td { border-bottom: 1px solid #334155 !important; color: #F1F5F9 !important; }
+body.dark-mode tr { border-color: #334155 !important; }
+body.dark-mode tbody tr:hover { background: #1E293B; }
+
+/* ---------- Alerts & Status ---------- */
+body.dark-mode .status-pending, body.dark-mode [class*="status-pending"] { background: rgba(245, 158, 11, 0.15) !important; color: #FCD34D !important; }
+body.dark-mode .status-in-progress, body.dark-mode .status-in_progress, body.dark-mode [class*="status-in"] { background: rgba(59, 130, 246, 0.15) !important; color: #93C5FD !important; }
+body.dark-mode .status-completed, body.dark-mode [class*="status-completed"] { background: rgba(16, 185, 129, 0.15) !important; color: #6EE7B7 !important; }
+body.dark-mode .status-cancelled, body.dark-mode [class*="status-cancelled"] { background: rgba(239, 68, 68, 0.15) !important; color: #FCA5A5 !important; }
+
+body.dark-mode .alert-success { background: rgba(16, 185, 129, 0.15) !important; color: #6EE7B7 !important; }
+body.dark-mode .alert-error, body.dark-mode .alert-danger { background: rgba(239, 68, 68, 0.15) !important; color: #FCA5A5 !important; }
+
+/* ---------- Leaderboard ---------- */
+body.dark-mode .leaderboard-item { border-bottom-color: #334155; }
+body.dark-mode .leaderboard-item:hover { background: #1E293B; }
+body.dark-mode .rank { color: #94A3B8; }
+body.dark-mode .leaderboard-details h4 { color: #FFFFFF; }
+body.dark-mode .leaderboard-details p { color: #94A3B8; }
+
+/* ---------- Footer ---------- */
+body.dark-mode .site-footer { background-color: #020617; }
+body.dark-mode .site-footer h4 { color: var(--accent); }
+body.dark-mode .site-footer a, body.dark-mode .site-footer p, body.dark-mode .footer-bottom { color: #94A3B8; }
+
+/* ---------- Chat ---------- */
+body.dark-mode .chat-sidebar-header { background: #0F172A !important; border-color: #334155 !important; }
+body.dark-mode .chat-sidebar-header h3 { color: #F1F5F9 !important; }
+body.dark-mode .chat-list-item { border-color: #334155 !important; }
+body.dark-mode .chat-list-item:hover, body.dark-mode .chat-list-item.active { background: #0F172A !important; }
+body.dark-mode .chat-preview h4 { color: #F1F5F9 !important; }
+body.dark-mode .chat-preview p { color: #94A3B8 !important; }
+body.dark-mode .chat-main-header { background: #1E293B !important; border-color: #334155 !important; }
+body.dark-mode .chat-main-header h4 { color: #F1F5F9 !important; }
+body.dark-mode .chat-messages { background-color: #0F172A !important; background-image: radial-gradient(#334155 1px, transparent 1px); }
+body.dark-mode .message-sent { background: #005c4b !important; color: #E9EDEF !important; }
+body.dark-mode .message-received { background: #202C33 !important; color: #E9EDEF !important; border-color: #2A3942 !important; }
+body.dark-mode .message-time { color: #8696A0 !important; }
+body.dark-mode .chat-input-area { background: #1E293B !important; border-top: 1px solid #334155 !important; }
+body.dark-mode .chat-input-area input { background: #0F172A !important; border: 1px solid #334155 !important; color: #F1F5F9 !important; }
+
+/* =========================================
+   FIX CTA SECTION (Homepage Bottom)
+   ========================================= */
+body.dark-mode .cta-section {
+    /* Force it to be dark navy, ignoring the light gray --navy variable */
+    background: linear-gradient(135deg, #0A192F 0%, #112240 100%) !important;
+    border: 1px solid #334155;
+}
+
+body.dark-mode .cta-section h2,
+body.dark-mode .why-us h2 {
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .cta-section p,
+body.dark-mode .why-us p,
+body.dark-mode .why-us .section-header p {
+    color: #CBD5E1 !important;
+}
+
+body.dark-mode .cta-section .btn-secondary {
+    color: #FFFFFF !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+body.dark-mode .cta-section .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: #FFFFFF !important;
+}
